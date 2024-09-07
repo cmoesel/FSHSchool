@@ -8,7 +8,7 @@
     window.onload = function () {
       if (/^\/FSHOnline(\/|$)/i.test(window.location.pathname)) {
         // redirect to the new location of courses
-        const newLocation = `{{ "https://fshonline.chrism.org" | safeJS }}${window.location.pathname.replace(/^\/FSHOnline/i, '')}${window.location.hash || ''}`;
+        const newLocation = `${window.location.protocol}{{ "//fshonline.chrism.org" | safeJS }}${window.location.pathname.replace(/^\/FSHOnline/i, '')}${window.location.hash || ''}`;
         document.getElementById("content").innerHTML = `Redirecting to ${newLocation}`;
         window.location.replace(newLocation);
       } else if (/^\/(courses|fsh-finder)(\/|$)/i.test(window.location.pathname)) {
