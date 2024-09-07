@@ -1,26 +1,23 @@
 {{ define "main" }}
-
-  <h1>404 Not Found</h1>
-  <p>The page you requested cannot be found.</p>
-  <p>
-    <a href="{{ .Site.Home.RelPermalink }}">
-      Return to the home page
-    </a>
-  </p>
+<main id="main">
+  <div id="content">
+    <h1 id="title">Not found</h1>
+    <p>Oops! This page doesn't exist. Try going back to our <a href="{{ "/" | relURL }}">home page</a>.</p>
+  </div>
   <script>
     window.onload = function () {
       if (/^\/FSHOnline(\/|$)/i.test(window.location.pathname)) {
         // redirect to the new location of courses
         const newLocation = `{{ "https://fshonline.chrism.org" | safeJS }}${window.location.pathname.replace(/^\/FSHOnline/i, '')}${window.location.hash || ''}`;
-        console.log(`Redirect to ${newLocation}`);
+        document.getElementById("content").innerHTML = `Redirecting to ${newLocation}`;
         window.location.replace(newLocation);
       } else if (/^\/(courses|fsh-finder)(\/|$)/i.test(window.location.pathname)) {
         // redirect to the new location of courses or fsh-finder
         const newLocation = `{{ "https://fshschool.github.io" | safeJS }}${window.location.pathname}${window.location.hash || ''}`;
-        console.log(`Redirect to ${newLocation}`);
+        document.getElementById("content").innerHTML = `Redirecting to ${newLocation}`;
         window.location.replace(newLocation);
       }
     }
   </script>
-
+</main>
 {{ end }}

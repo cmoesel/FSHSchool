@@ -17,8 +17,6 @@ defaultContentLanguageInSubdir = false
 enableMissingTranslationPlaceholders = true
 
 disableKinds = ["taxonomy", "taxonomyTerm"]
-# Disable automatic lowering of paths to support /FSHOnline
-disablePathToLower = true
 
 # Highlighting config
 pygmentsCodeFences = true
