@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FSH School – SUSHI</title>
-    <link>https://cmoesel.github.io/FSHSchool/docs/sushi/</link>
+    <link>https://chrism.org/docs/sushi/</link>
     <description>Recent content in SUSHI on FSH School</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="https://cmoesel.github.io/FSHSchool/docs/sushi/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://chrism.org/docs/sushi/index.xml" rel="self" type="application/rss+xml" />
     
     
       
@@ -15,10 +15,10 @@
     
     <item>
       <title>Docs: Installation</title>
-      <link>https://cmoesel.github.io/FSHSchool/docs/sushi/installation/</link>
+      <link>https://chrism.org/docs/sushi/installation/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cmoesel.github.io/FSHSchool/docs/sushi/installation/</guid>
+      <guid>https://chrism.org/docs/sushi/installation/</guid>
       <description>
         
         
@@ -56,10 +56,10 @@ For the most up-to-date information and latest releases of SUSHI, check the &lt;
     
     <item>
       <title>Docs: Project Structure</title>
-      <link>https://cmoesel.github.io/FSHSchool/docs/sushi/project/</link>
+      <link>https://chrism.org/docs/sushi/project/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cmoesel.github.io/FSHSchool/docs/sushi/project/</guid>
+      <guid>https://chrism.org/docs/sushi/project/</guid>
       <description>
         
         
@@ -73,7 +73,7 @@ For the most up-to-date information and latest releases of SUSHI, check the &lt;
 |        └── file3.fsh
 └── sushi-config.yaml
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Each FSH file can contain multiple FSH definitions of varying types. FSH file names are not significant, but must end with the &lt;strong&gt;.fsh&lt;/strong&gt; extension. In addition, FSH files can be organized into subdirectories. This provides authors the flexibility to organize their FSH definitions in whatever way makes sense to then.&lt;/p&gt;
-&lt;p&gt;The &lt;strong&gt;sushi-config.yaml&lt;/strong&gt; file provides project configuration data to SUSHI. It is described further in the &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/configuration/&#34;&gt;Configuration&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;sushi-config.yaml&lt;/strong&gt; file provides project configuration data to SUSHI. It is described further in the &lt;a href=&#34;https://chrism.org/docs/sushi/configuration/&#34;&gt;Configuration&lt;/a&gt; documentation.&lt;/p&gt;
 &lt;h2 id=&#34;initializing-a-sushi-project&#34;&gt;Initializing a SUSHI Project&lt;/h2&gt;
 &lt;p&gt;Setting up a fully-featured FSH project can be complex, so SUSHI provides an &lt;code&gt;init&lt;/code&gt; command to do it automatically. When &lt;code&gt;sushi init&lt;/code&gt; is run, SUSHI will request project information from the user:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;Name (Default: ExampleIG): my-project
@@ -100,7 +100,7 @@ Initialize SUSHI project in C:\Users\shorty\dev\my-project? [y/n]: y
 |   └── pagecontent
 |       └── index.md
 └── sushi-config.yaml
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In addition to the &lt;strong&gt;input/fsh&lt;/strong&gt; folder, &lt;code&gt;init&lt;/code&gt; creates an &lt;strong&gt;input/pagecontent&lt;/strong&gt; folder containing a dummy home page for your IG. The files &lt;strong&gt;ig.ini&lt;/strong&gt; and &lt;strong&gt;ignoreWarnings.txt&lt;/strong&gt; are required by the &lt;a href=&#34;https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html&#34;&gt;template-based IG Publisher&lt;/a&gt;. The &lt;code&gt;.bat&lt;/code&gt; and &lt;code&gt;.sh&lt;/code&gt; scripts which allow you to &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/running/#downloading-the-ig-publisher&#34;&gt;run the IG Publisher&lt;/a&gt; from your command line. Finally, a default &lt;code&gt;.gitignore&lt;/code&gt; file for integration with GitHub is provided. From this point on, you can modify the configuration and definitions as necessary.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;In addition to the &lt;strong&gt;input/fsh&lt;/strong&gt; folder, &lt;code&gt;init&lt;/code&gt; creates an &lt;strong&gt;input/pagecontent&lt;/strong&gt; folder containing a dummy home page for your IG. The files &lt;strong&gt;ig.ini&lt;/strong&gt; and &lt;strong&gt;ignoreWarnings.txt&lt;/strong&gt; are required by the &lt;a href=&#34;https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html&#34;&gt;template-based IG Publisher&lt;/a&gt;. The &lt;code&gt;.bat&lt;/code&gt; and &lt;code&gt;.sh&lt;/code&gt; scripts which allow you to &lt;a href=&#34;https://chrism.org/docs/sushi/running/#downloading-the-ig-publisher&#34;&gt;run the IG Publisher&lt;/a&gt; from your command line. Finally, a default &lt;code&gt;.gitignore&lt;/code&gt; file for integration with GitHub is provided. From this point on, you can modify the configuration and definitions as necessary.&lt;/p&gt;
 &lt;h2 id=&#34;using-the-hl7-ig-publisher-and-auto-builder&#34;&gt;Using the HL7 IG Publisher and Auto-Builder&lt;/h2&gt;
 &lt;p&gt;This project structure integrates with the HL7 IG Publisher &lt;a href=&#34;https://github.com/FHIR/auto-ig-builder/blob/master/README.md&#34;&gt;Auto-Builder&lt;/a&gt;. When the IG Publisher detects an &lt;strong&gt;input/fsh&lt;/strong&gt; subdirectory, it will automatically run SUSHI on the project directory and output the SUSHI results to a &lt;strong&gt;fsh-generated&lt;/strong&gt; directory (e.g., &lt;strong&gt;my-project/fsh-generated&lt;/strong&gt; in the example above). It will then continue with the normal IG Publisher process.&lt;/p&gt;
 &lt;p&gt;This approach allows a GitHub repository to be configured such that whenever changes to FSH files are pushed to GitHub, the &lt;a href=&#34;https://github.com/FHIR/auto-ig-builder/blob/master/README.md&#34;&gt;Auto-Builder&lt;/a&gt; will pick them up, run the SUSHI/IG Publisher process, and publish the resulting IG to &lt;a href=&#34;http://build.fhir.org&#34;&gt;http://build.fhir.org&lt;/a&gt;.&lt;/p&gt;
@@ -137,7 +137,7 @@ Examples of &lt;strong&gt;package.json&lt;/strong&gt;, &lt;strong&gt;ig.ini&lt;/
 &lt;p&gt;You can populate your project as follows:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;sushi-config.yaml&lt;/strong&gt;: This file provides configuration data to SUSHI. It is described further in the &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/configuration/&#34;&gt;Configuration&lt;/a&gt; documentation.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;sushi-config.yaml&lt;/strong&gt;: This file provides configuration data to SUSHI. It is described further in the &lt;a href=&#34;https://chrism.org/docs/sushi/configuration/&#34;&gt;Configuration&lt;/a&gt; documentation.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;input/fsh/*.fsh&lt;/strong&gt;: FSH files contain the FHIR Shorthand definitions for all the resources and examples in your IG.&lt;/p&gt;
@@ -171,7 +171,7 @@ Examples of &lt;strong&gt;package.json&lt;/strong&gt;, &lt;strong&gt;ig.ini&lt;/
 &lt;/ul&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;input/{supported-resource-input-directory}/*&lt;/strong&gt; (not shown above): JSON or XML files in &lt;a href=&#34;https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html#root.input&#34;&gt;supported resource directories&lt;/a&gt; (e.g., &lt;strong&gt;profiles&lt;/strong&gt;, &lt;strong&gt;extensions&lt;/strong&gt;, &lt;strong&gt;examples&lt;/strong&gt;, etc.) can be referenced by FHIR artifacts defined in FSH, and will be added to the generated &lt;strong&gt;ImplementationGuide.json&lt;/strong&gt; file. If there are additional subfolders (e.g., input/resources/nested), use the &lt;code&gt;path-resource&lt;/code&gt; parameter in &lt;strong&gt;sushi-config.yaml&lt;/strong&gt; to tell the IG Publisher which additional input paths to process (see &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/tips/#specifying-additional-resource-paths&#34;&gt;Specifying Additional Resource Paths&lt;/a&gt; for details).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;input/{supported-resource-input-directory}/*&lt;/strong&gt; (not shown above): JSON or XML files in &lt;a href=&#34;https://build.fhir.org/ig/FHIR/ig-guidance/using-templates.html#root.input&#34;&gt;supported resource directories&lt;/a&gt; (e.g., &lt;strong&gt;profiles&lt;/strong&gt;, &lt;strong&gt;extensions&lt;/strong&gt;, &lt;strong&gt;examples&lt;/strong&gt;, etc.) can be referenced by FHIR artifacts defined in FSH, and will be added to the generated &lt;strong&gt;ImplementationGuide.json&lt;/strong&gt; file. If there are additional subfolders (e.g., input/resources/nested), use the &lt;code&gt;path-resource&lt;/code&gt; parameter in &lt;strong&gt;sushi-config.yaml&lt;/strong&gt; to tell the IG Publisher which additional input paths to process (see &lt;a href=&#34;https://chrism.org/docs/sushi/tips/#specifying-additional-resource-paths&#34;&gt;Specifying Additional Resource Paths&lt;/a&gt; for details).&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;package-list.json&lt;/strong&gt;: This optional file, described &lt;a href=&#34;https://confluence.hl7.org/display/FHIR/FHIR+IG+PackageList+doco&#34;&gt;here&lt;/a&gt;, should contain the version history of your IG.&lt;/p&gt;
@@ -196,10 +196,10 @@ SUSHI does log several multi-line warnings, but these warnings cannot be specifi
     
     <item>
       <title>Docs: Configuration</title>
-      <link>https://cmoesel.github.io/FSHSchool/docs/sushi/configuration/</link>
+      <link>https://chrism.org/docs/sushi/configuration/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cmoesel.github.io/FSHSchool/docs/sushi/configuration/</guid>
+      <guid>https://chrism.org/docs/sushi/configuration/</guid>
       <description>
         
         
@@ -245,7 +245,7 @@ SUSHI does log several multi-line warnings, but these warnings cannot be specifi
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;fhirVersion&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;4.0.1&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;copyrightYear&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;2020&lt;/span&gt;+&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;releaseLabel&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;ci-build&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://cmoesel.github.io/FSHSchool/FSHSchool/docs/sushi/configuration/minimum-config.yaml&#34;&gt;&lt;i class=&#39;fas fa-download fa-fw&#39;&gt;&lt;/i&gt; Download Minimum Configuration Example&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://chrism.org/docs/sushi/configuration/minimum-config.yaml&#34;&gt;&lt;i class=&#39;fas fa-download fa-fw&#39;&gt;&lt;/i&gt; Download Minimum Configuration Example&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;For an official HL7 project, the &lt;code&gt;id&lt;/code&gt; and &lt;code&gt;canonical&lt;/code&gt; will typically be assigned by the &lt;a href=&#34;mailto:fhir-director@hl7.org&#34;&gt;FHIR Product Director&lt;/a&gt;.&lt;/li&gt;
 &lt;li&gt;&lt;code&gt;canonical&lt;/code&gt; refers to the &lt;em&gt;canonical base&lt;/em&gt; of the IG, not the canonical URL of the IG resource (e.g., &lt;code&gt;http://hl7.org/fhir/us/example&lt;/code&gt;, &lt;em&gt;not&lt;/em&gt; &lt;code&gt;http://hl7.org/fhir/us/example/ImplementationGuide/fhir.us.example&lt;/code&gt;).&lt;/li&gt;
@@ -272,7 +272,7 @@ SUSHI does log several multi-line warnings, but these warnings cannot be specifi
 
 &lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-SUSHI can generate a simple configuration file for you with the &lt;code&gt;init&lt;/code&gt; &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/project/#initializing-a-sushi-project&#34;&gt;command&lt;/a&gt;
+SUSHI can generate a simple configuration file for you with the &lt;code&gt;init&lt;/code&gt; &lt;a href=&#34;https://chrism.org/docs/sushi/project/#initializing-a-sushi-project&#34;&gt;command&lt;/a&gt;
 &lt;/div&gt;
 
 &lt;h2 id=&#34;fsh-and-ig-processing-recommended-configuration&#34;&gt;FSH and IG Processing: Recommended Configuration&lt;/h2&gt;
@@ -294,7 +294,7 @@ SUSHI can generate a simple configuration file for you with the &lt;code&gt;init
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#dfdfdf&#34;&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;email&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;usrsc@lists.HL7.org&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#dfdfdf&#34;&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;dependencies&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:block;width:100%;background-color:#dfdfdf&#34;&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;hl7.fhir.us.core&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#0000cf;font-weight:bold&#34;&gt;3.1.0&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://cmoesel.github.io/FSHSchool/FSHSchool/docs/sushi/configuration/recommended-config.yaml&#34;&gt;&lt;i class=&#39;fas fa-download fa-fw&#39;&gt;&lt;/i&gt; Download Recommended Configuration Example&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://chrism.org/docs/sushi/configuration/recommended-config.yaml&#34;&gt;&lt;i class=&#39;fas fa-download fa-fw&#39;&gt;&lt;/i&gt; Download Recommended Configuration Example&lt;/a&gt;&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-primary&#34; role=&#34;alert&#34;&gt;
@@ -431,7 +431,7 @@ The &lt;code&gt;license&lt;/code&gt; value should come from the &lt;a href=&#34;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;instanceOptions&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;N/A&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;&lt;code&gt;key: value&lt;/code&gt; pairs, where keys are &lt;code&gt;setId&lt;/code&gt;, &lt;code&gt;setMetaProfile&lt;/code&gt;, and &lt;code&gt;manualSliceOrdering&lt;/code&gt;. &lt;ul&gt;&lt;li&gt;The &lt;code&gt;setId&lt;/code&gt; value controls whether &lt;code&gt;id&lt;/code&gt; is set on generated instances. Options are &lt;code&gt;always&lt;/code&gt; (set &lt;code&gt;id&lt;/code&gt; on all instances [the default]) or &lt;code&gt;standalone-only&lt;/code&gt; (set &lt;code&gt;id&lt;/code&gt; for instances where the &lt;code&gt;Usage&lt;/code&gt; keyword is NOT &lt;code&gt;#inline&lt;/code&gt;).&lt;/li&gt;&lt;li&gt;The &lt;code&gt;setMetaProfile&lt;/code&gt; value controls whether &lt;code&gt;meta.profile&lt;/code&gt; is set on generated instances. It can have the following values: &lt;code&gt;always&lt;/code&gt; (set meta.profile for all instances [the default]), &lt;code&gt;never&lt;/code&gt; (do not set meta.profile on any instances), &lt;code&gt;inline-only&lt;/code&gt; (set &lt;code&gt;meta.profile&lt;/code&gt; only for instances of profiles with &lt;code&gt;Usage&lt;/code&gt; keyword set to &lt;code&gt;#inline&lt;/code&gt;), or &lt;code&gt;standalone-only&lt;/code&gt; (set &lt;code&gt;meta.profile&lt;/code&gt; for instances where the &lt;code&gt;Usage&lt;/code&gt; keyword is NOT &lt;code&gt;#inline&lt;/code&gt;).&lt;/li&gt;&lt;li&gt;The &lt;code&gt;manualSliceOrdering&lt;/code&gt; value controls whether slice ordering is determined exclusively by the order in which slices are referenced in an instance&amp;rsquo;s FSH rules. When this flag is set to &lt;code&gt;true&lt;/code&gt;, manual ordering is enabled (see &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/tips/#manual-slice-ordering&#34;&gt;Manual Slice Ordering&lt;/a&gt;).&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;&lt;code&gt;key: value&lt;/code&gt; pairs, where keys are &lt;code&gt;setId&lt;/code&gt;, &lt;code&gt;setMetaProfile&lt;/code&gt;, and &lt;code&gt;manualSliceOrdering&lt;/code&gt;. &lt;ul&gt;&lt;li&gt;The &lt;code&gt;setId&lt;/code&gt; value controls whether &lt;code&gt;id&lt;/code&gt; is set on generated instances. Options are &lt;code&gt;always&lt;/code&gt; (set &lt;code&gt;id&lt;/code&gt; on all instances [the default]) or &lt;code&gt;standalone-only&lt;/code&gt; (set &lt;code&gt;id&lt;/code&gt; for instances where the &lt;code&gt;Usage&lt;/code&gt; keyword is NOT &lt;code&gt;#inline&lt;/code&gt;).&lt;/li&gt;&lt;li&gt;The &lt;code&gt;setMetaProfile&lt;/code&gt; value controls whether &lt;code&gt;meta.profile&lt;/code&gt; is set on generated instances. It can have the following values: &lt;code&gt;always&lt;/code&gt; (set meta.profile for all instances [the default]), &lt;code&gt;never&lt;/code&gt; (do not set meta.profile on any instances), &lt;code&gt;inline-only&lt;/code&gt; (set &lt;code&gt;meta.profile&lt;/code&gt; only for instances of profiles with &lt;code&gt;Usage&lt;/code&gt; keyword set to &lt;code&gt;#inline&lt;/code&gt;), or &lt;code&gt;standalone-only&lt;/code&gt; (set &lt;code&gt;meta.profile&lt;/code&gt; for instances where the &lt;code&gt;Usage&lt;/code&gt; keyword is NOT &lt;code&gt;#inline&lt;/code&gt;).&lt;/li&gt;&lt;li&gt;The &lt;code&gt;manualSliceOrdering&lt;/code&gt; value controls whether slice ordering is determined exclusively by the order in which slices are referenced in an instance&amp;rsquo;s FSH rules. When this flag is set to &lt;code&gt;true&lt;/code&gt;, manual ordering is enabled (see &lt;a href=&#34;https://chrism.org/docs/sushi/tips/#manual-slice-ordering&#34;&gt;Manual Slice Ordering&lt;/a&gt;).&lt;/li&gt;&lt;/ul&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;jurisdiction&lt;/td&gt;
@@ -481,7 +481,7 @@ The &lt;code&gt;license&lt;/code&gt; value should come from the &lt;a href=&#34;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;parameters&lt;/td&gt;
 &lt;td align=&#34;left&#34;&gt;definition.parameter&lt;/td&gt;
-&lt;td align=&#34;left&#34;&gt;Consists of key-value pairs where the keys are values of &lt;code&gt;definition.parameter.code&lt;/code&gt;. For R5 IG resources, the key can be a FSH code that specifies the &lt;code&gt;code&lt;/code&gt; and &lt;code&gt;system&lt;/code&gt; values of &lt;code&gt;definition.parameter.code&lt;/code&gt;, which is a Coding. See the &lt;a href=&#34;#exhaustive-example&#34;&gt;Exhaustive Example&lt;/a&gt; for details. If a parameter allows repeating values, the value in the YAML may be a sequence/array. For example, the &lt;code&gt;path-resource&lt;/code&gt; parameter specifies relative paths to additional folders that contain predefined resources (see &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/tips/#specifying-additional-resource-paths&#34;&gt;Specifying Additional Resource Paths&lt;/a&gt;).&lt;/td&gt;
+&lt;td align=&#34;left&#34;&gt;Consists of key-value pairs where the keys are values of &lt;code&gt;definition.parameter.code&lt;/code&gt;. For R5 IG resources, the key can be a FSH code that specifies the &lt;code&gt;code&lt;/code&gt; and &lt;code&gt;system&lt;/code&gt; values of &lt;code&gt;definition.parameter.code&lt;/code&gt;, which is a Coding. See the &lt;a href=&#34;#exhaustive-example&#34;&gt;Exhaustive Example&lt;/a&gt; for details. If a parameter allows repeating values, the value in the YAML may be a sequence/array. For example, the &lt;code&gt;path-resource&lt;/code&gt; parameter specifies relative paths to additional folders that contain predefined resources (see &lt;a href=&#34;https://chrism.org/docs/sushi/tips/#specifying-additional-resource-paths&#34;&gt;Specifying Additional Resource Paths&lt;/a&gt;).&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
 &lt;td align=&#34;left&#34;&gt;publisher&lt;/td&gt;
@@ -798,17 +798,17 @@ The &lt;code&gt;license&lt;/code&gt; value should come from the &lt;a href=&#34;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# in an Instance&amp;#39;s assignment rule. All slices appear in the order in which they are specified in FSH rules.&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;  &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;manualSliceOrdering&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;:&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt; &lt;/span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;true&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
 &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://cmoesel.github.io/FSHSchool/FSHSchool/docs/sushi/configuration/exhaustive-config.yaml&#34;&gt;&lt;i class=&#39;fas fa-download fa-fw&#39;&gt;&lt;/i&gt; Download Exhaustive Configuration Example&lt;/a&gt;&lt;/p&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;a href=&#34;https://chrism.org/docs/sushi/configuration/exhaustive-config.yaml&#34;&gt;&lt;i class=&#39;fas fa-download fa-fw&#39;&gt;&lt;/i&gt; Download Exhaustive Configuration Example&lt;/a&gt;&lt;/p&gt;
 
       </description>
     </item>
     
     <item>
       <title>Docs: Running SUSHI</title>
-      <link>https://cmoesel.github.io/FSHSchool/docs/sushi/running/</link>
+      <link>https://chrism.org/docs/sushi/running/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cmoesel.github.io/FSHSchool/docs/sushi/running/</guid>
+      <guid>https://chrism.org/docs/sushi/running/</guid>
       <description>
         
         
@@ -848,7 +848,7 @@ If you run SUSHI from your FSH project directory, and accept the defaults, the c
 &lt;h4 id=&#34;init&#34;&gt;&lt;code&gt;init&lt;/code&gt;&lt;/h4&gt;
 &lt;p&gt;The &lt;code&gt;init&lt;/code&gt; command is used to generate a project structure that is compatible with the FHIR IG Publisher. In SUSHI 2.x, it can be used as follows:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;i class=&#34;fas fa-dollar-sign&#34;&gt;&lt;/i&gt; sushi init
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Further details on how to use this command can be found in &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/project/#initializing-a-sushi-project&#34;&gt;Initializing a SUSHI Project&lt;/a&gt;.&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Further details on how to use this command can be found in &lt;a href=&#34;https://chrism.org/docs/sushi/project/#initializing-a-sushi-project&#34;&gt;Initializing a SUSHI Project&lt;/a&gt;.&lt;/p&gt;
 &lt;h4 id=&#34;update-dependencies&#34;&gt;&lt;code&gt;update-dependencies&lt;/code&gt;&lt;/h4&gt;
 &lt;p&gt;The &lt;code&gt;update-dependencies&lt;/code&gt; command is used to update the FSH project&amp;rsquo;s dependencies to the latest version. The command will check all dependencies defined in the &lt;code&gt;sushi-config.yaml&lt;/code&gt; file to see if they are at the latest published version. SUSHI will output a list of all dependencies that have later versions and prompt the author whether to update. Choosing to update will directly modify the &lt;code&gt;sushi-config.yaml&lt;/code&gt; file with the latest version and download the latest version of the dependency to the FHIR cache. Any dependency with a &lt;code&gt;current&lt;/code&gt; or &lt;code&gt;dev&lt;/code&gt; version will not be modified. This command can be used as follows:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;&lt;i class=&#34;fas fa-dollar-sign&#34;&gt;&lt;/i&gt; sushi update-dependencies &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;{&lt;/span&gt;fsh-project-directory&lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;}&lt;/span&gt;
@@ -969,7 +969,7 @@ You can see a list of the available Firely Terminal versions &lt;a href=&#34;htt
 &lt;/div&gt;
 
 &lt;h2 id=&#34;sushi-outputs&#34;&gt;SUSHI Outputs&lt;/h2&gt;
-&lt;p&gt;Based on the inputs in FSH files, &lt;strong&gt;sushi-config.yaml&lt;/strong&gt;, and the IG project directory, SUSHI populates the &lt;strong&gt;fsh-generated&lt;/strong&gt; directory. For example, running SUSHI on the my-project project from the &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/project/&#34;&gt;Project Structure&lt;/a&gt; section would add a &lt;strong&gt;fsh-generated&lt;/strong&gt; folder as shown below:&lt;/p&gt;
+&lt;p&gt;Based on the inputs in FSH files, &lt;strong&gt;sushi-config.yaml&lt;/strong&gt;, and the IG project directory, SUSHI populates the &lt;strong&gt;fsh-generated&lt;/strong&gt; directory. For example, running SUSHI on the my-project project from the &lt;a href=&#34;https://chrism.org/docs/sushi/project/&#34;&gt;Project Structure&lt;/a&gt; section would add a &lt;strong&gt;fsh-generated&lt;/strong&gt; folder as shown below:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;my-project
 ├── fsh-generated
 |   └── resources
@@ -1051,10 +1051,10 @@ timeout = 120
     
     <item>
       <title>Docs: Tips and Tricks</title>
-      <link>https://cmoesel.github.io/FSHSchool/docs/sushi/tips/</link>
+      <link>https://chrism.org/docs/sushi/tips/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cmoesel.github.io/FSHSchool/docs/sushi/tips/</guid>
+      <guid>https://chrism.org/docs/sushi/tips/</guid>
       <description>
         
         
@@ -1283,27 +1283,27 @@ Usage: #definition
     
     <item>
       <title>Docs: SUSHI Tutorial</title>
-      <link>https://cmoesel.github.io/FSHSchool/docs/sushi/tutorial/</link>
+      <link>https://chrism.org/docs/sushi/tutorial/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cmoesel.github.io/FSHSchool/docs/sushi/tutorial/</guid>
+      <guid>https://chrism.org/docs/sushi/tutorial/</guid>
       <description>
         
         
-        &lt;p&gt;&lt;a href=&#34;https://build.fhir.org/ig/HL7/fhir-shorthand/index.html&#34;&gt;FHIR Shorthand&lt;/a&gt; (FSH) is a specially-designed language for defining the content of FHIR Implementation Guides (IGs). It is simple and compact, with tools to produce Fast Healthcare Interoperability Resources (FHIR) profiles, extensions and IGs. FSH is compiled from text files to FHIR artifacts using &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi&#34;&gt;SUSHI&lt;/a&gt;. To get started using FSH, you need to install and run SUSHI using the steps below.&lt;/p&gt;
+        &lt;p&gt;&lt;a href=&#34;https://build.fhir.org/ig/HL7/fhir-shorthand/index.html&#34;&gt;FHIR Shorthand&lt;/a&gt; (FSH) is a specially-designed language for defining the content of FHIR Implementation Guides (IGs). It is simple and compact, with tools to produce Fast Healthcare Interoperability Resources (FHIR) profiles, extensions and IGs. FSH is compiled from text files to FHIR artifacts using &lt;a href=&#34;https://chrism.org/docs/sushi&#34;&gt;SUSHI&lt;/a&gt;. To get started using FSH, you need to install and run SUSHI using the steps below.&lt;/p&gt;
 
 
 &lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
 &lt;h4 class=&#34;alert-heading&#34;&gt;Tip&lt;/h4&gt;
-If you find this helpful, you may also want to look at our &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/courses/&#34;&gt;self-service FSH Seminar course&lt;/a&gt;, which includes a more extensive walkthrough of using SUSHI and FSH.
+If you find this helpful, you may also want to look at our &lt;a href=&#34;https://chrism.org/courses/&#34;&gt;self-service FSH Seminar course&lt;/a&gt;, which includes a more extensive walkthrough of using SUSHI and FSH.
 &lt;/div&gt;
 
 &lt;h3 id=&#34;step-1-review-introduction&#34;&gt;Step 1: Review Introduction&lt;/h3&gt;
-&lt;p&gt;If you haven&amp;rsquo;t done so already, please read or review the &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/introduction/&#34;&gt;Introduction&lt;/a&gt; documentation to gain an understanding of the conventions used in this tutorial and the resources available to you.&lt;/p&gt;
+&lt;p&gt;If you haven&amp;rsquo;t done so already, please read or review the &lt;a href=&#34;https://chrism.org/docs/introduction/&#34;&gt;Introduction&lt;/a&gt; documentation to gain an understanding of the conventions used in this tutorial and the resources available to you.&lt;/p&gt;
 &lt;h3 id=&#34;step-2-install-nodejs-and-sushi&#34;&gt;Step 2: Install Node.js and Sushi&lt;/h3&gt;
-&lt;p&gt;If you have not already installed SUSHI, follow the &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/installation&#34;&gt;SUSHI Installation&lt;/a&gt; instructions.&lt;/p&gt;
+&lt;p&gt;If you have not already installed SUSHI, follow the &lt;a href=&#34;https://chrism.org/docs/sushi/installation&#34;&gt;SUSHI Installation&lt;/a&gt; instructions.&lt;/p&gt;
 &lt;h3 id=&#34;step-3-download-sample-fsh-project&#34;&gt;Step 3: Download Sample FSH Project&lt;/h3&gt;
-&lt;p&gt;To start with some working examples of FSH files and a skeleton FSH project, &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/FSHSchool/docs/sushi/tutorial/fsh-tutorial-master.zip&#34;&gt;&lt;i class=&#39;fas fa-download fa-fw&#39;&gt;&lt;/i&gt; download the FSH Tutorial Starter&lt;/a&gt; and unzip it into a directory of your choice.&lt;/p&gt;
+&lt;p&gt;To start with some working examples of FSH files and a skeleton FSH project, &lt;a href=&#34;https://chrism.org/docs/sushi/tutorial/fsh-tutorial-master.zip&#34;&gt;&lt;i class=&#39;fas fa-download fa-fw&#39;&gt;&lt;/i&gt; download the FSH Tutorial Starter&lt;/a&gt; and unzip it into a directory of your choice.&lt;/p&gt;
 &lt;p&gt;After the file is unzipped, you should see two subdirectories:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;FishExample&lt;/strong&gt;&lt;/li&gt;
@@ -1466,10 +1466,10 @@ Using aliases has no effect on the IG; it simply makes the FSH code a bit neater
     
     <item>
       <title>Docs: API</title>
-      <link>https://cmoesel.github.io/FSHSchool/docs/sushi/api/</link>
+      <link>https://chrism.org/docs/sushi/api/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://cmoesel.github.io/FSHSchool/docs/sushi/api/</guid>
+      <guid>https://chrism.org/docs/sushi/api/</guid>
       <description>
         
         
@@ -1497,7 +1497,7 @@ by SUSHI are likely not perfect and differ from the snapshots that the IG Publis
 If you plan to publish these resources, it would be better to use one of those other tools to generate the snapshots.
 &lt;/div&gt;
 
-&lt;p&gt;See the &lt;a href=&#34;https://cmoesel.github.io/FSHSchool/docs/sushi/configuration/#full-configuration&#34;&gt;configuration&lt;/a&gt; documentation for more information on &lt;code&gt;canonical&lt;/code&gt;, &lt;code&gt;version&lt;/code&gt;, &lt;code&gt;fhirVersion&lt;/code&gt;, and &lt;code&gt;dependencies&lt;/code&gt;. These properties correspond to the properties of the same name that are used in &lt;code&gt;sushi-config.yaml&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;See the &lt;a href=&#34;https://chrism.org/docs/sushi/configuration/#full-configuration&#34;&gt;configuration&lt;/a&gt; documentation for more information on &lt;code&gt;canonical&lt;/code&gt;, &lt;code&gt;version&lt;/code&gt;, &lt;code&gt;fhirVersion&lt;/code&gt;, and &lt;code&gt;dependencies&lt;/code&gt;. These properties correspond to the properties of the same name that are used in &lt;code&gt;sushi-config.yaml&lt;/code&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;return-value&#34;&gt;Return Value&lt;/h2&gt;
 &lt;p&gt;A &lt;code&gt;Promise&lt;/code&gt; that resolves to an object with the following attributes:&lt;/p&gt;
 &lt;ul&gt;
