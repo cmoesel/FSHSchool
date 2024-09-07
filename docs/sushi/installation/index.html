@@ -7,7 +7,7 @@
 
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
-<link rel="alternate" type="application/rss&#43;xml" href="https://chrism.org/docs/index.xml">
+<link rel="alternate" type="application/rss&#43;xml" href="https://chrism.org/docs/sushi/installation/index.xml">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -21,15 +21,18 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Documentation | FSH School</title><meta property="og:title" content="Documentation" />
-<meta property="og:description" content="" />
+<title>Installation | FSH School</title><meta property="og:title" content="Installation" />
+<meta property="og:description" content="Instructions for installing the SUSHI tool on your system
+" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://chrism.org/docs/" />
+<meta property="og:url" content="https://chrism.org/docs/sushi/installation/" />
 
-<meta itemprop="name" content="Documentation">
-<meta itemprop="description" content=""><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Documentation"/>
-<meta name="twitter:description" content=""/>
+<meta itemprop="name" content="Installation">
+<meta itemprop="description" content="Instructions for installing the SUSHI tool on your system
+"><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Installation"/>
+<meta name="twitter:description" content="Instructions for installing the SUSHI tool on your system
+"/>
 
 
 
@@ -181,7 +184,7 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Documentation</a>
+    <a  href="/docs/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">Documentation</a>
   </li>
   <ul>
     <li class="collapse show" id="docs">
@@ -198,10 +201,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/sushi/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">SUSHI</a>
+    <a  href="/docs/sushi/" class="align-left pl-0 pr-2 td-sidebar-link td-sidebar-link__section">SUSHI</a>
   </li>
   <ul>
-    <li class="collapse " id="docssushi">
+    <li class="collapse show" id="docssushi">
       
       
       
@@ -215,10 +218,10 @@
 
 <ul class="td-sidebar-nav__section pr-md-3">
   <li class="td-sidebar-nav__section-title">
-    <a  href="/docs/sushi/installation/" class="align-left pl-0 pr-2 collapsed td-sidebar-link td-sidebar-link__section">Installation</a>
+    <a  href="/docs/sushi/installation/" class="align-left pl-0 pr-2 active td-sidebar-link td-sidebar-link__section">Installation</a>
   </li>
   <ul>
-    <li class="collapse " id="docssushiinstallation">
+    <li class="collapse show" id="docssushiinstallation">
       
       
       
@@ -537,7 +540,7 @@
 
 
 
-<a href="https://github.com/FSHSchool/site/issues/new?title=Documentation" target="_blank"><i class="fab fa-github fa-fw"></i> Report a documentation issue</a>
+<a href="https://github.com/FSHSchool/site/issues/new?title=Installation" target="_blank"><i class="fab fa-github fa-fw"></i> Report a documentation issue</a>
 <a href="https://github.com/fhir/sushi/issues/new" target="_blank"><i class="fab fa-github fa-fw"></i> Report a SUSHI issue</a>
 
 <a href="https://www.hl7.org/fhir/" target="_blank"><i class="fas fa-fire fa-fw"></i> FHIR R4 Specification</a>
@@ -552,20 +555,9 @@
 
 <nav id="TableOfContents">
   <ul>
-    <li>
-      <ul>
-        <li><a href="#what-is-fsh">What is FSH?</a></li>
-        <li><a href="#what-is-sushi">What is SUSHI?</a></li>
-        <li><a href="#what-is-gofsh">What is GoFSH?</a></li>
-      </ul>
-    </li>
-    <li><a href="#fsh-school-conventions">FSH School Conventions</a></li>
-    <li><a href="#getting-started-with-fhir-and-fsh">Getting started with FHIR and FSH</a>
-      <ul>
-        <li><a href="#fhir-and-fhir-profiling">FHIR and FHIR Profiling</a></li>
-        <li><a href="#fsh">FSH</a></li>
-      </ul>
-    </li>
+    <li><a href="#step-1-install-nodejs">Step 1: Install Node.js</a></li>
+    <li><a href="#step-2-install-sushi">Step 2: Install SUSHI</a></li>
+    <li><a href="#reverting-sushi">Reverting SUSHI</a></li>
   </ul>
 </nav>
 
@@ -583,8 +575,28 @@
 
 
 
-<li class="breadcrumb-item active" aria-current="page">
+
+
+
+
+
+
+<li class="breadcrumb-item" >
 	<a href="https://chrism.org/docs/">Documentation</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item" >
+	<a href="https://chrism.org/docs/sushi/">SUSHI</a>
+</li>
+
+
+
+
+<li class="breadcrumb-item active" aria-current="page">
+	<a href="https://chrism.org/docs/sushi/installation/">Installation</a>
 </li>
 
 	</ol>
@@ -592,109 +604,37 @@
 
             
 <div class="td-content">
-	<h1>Documentation</h1>
-        
+	<h1>Installation</h1>
+        <div class="lead">Instructions for installing the SUSHI tool on your system</div>
 	
-	<p>This is the documentation for <strong>SUSHI</strong> and <strong>GoFSH</strong>. (This is <em>not</em> the <a href="https://hl7.org/fhir/uv/shorthand/reference.html">FSH documentation</a>; see the following section for more details.)</p>
-<h3 id="what-is-fsh">What is FSH?</h3>
-<p><a href="https://hl7.org/fhir/uv/shorthand/">FSH (<strong>F</strong>HIR <strong>Sh</strong>orthand)</a> is a specially-designed language for defining the content of <a href="https://hl7.org/">HL7</a> <a href="https://www.hl7.org/fhir/R4/overview.html">FHIR</a> <a href="https://www.hl7.org/fhir/implementationguide.html">Implementation Guides</a> (IGs). It is designed to be simple and compact, and along with SUSHI can be used to produce FHIR profiles, extensions, and IGs.</p>
-<p>If you are new to FHIR and FSH, or want more information, <a href="#getting-started-with-fhir-and-fsh">please see below</a>.</p>
-<h3 id="what-is-sushi">What is SUSHI?</h3>
-<p>SUSHI (<strong>S</strong>USHI <strong>U</strong>nshortens <strong>Sh</strong>ortHand <strong>I</strong>nputs) is a FSH compiler. SUSHI converts FSH language to <a href="https://www.hl7.org/fhir/R4/overview.html">FHIR artifacts</a>. SUSHI can run in stand-alone mode or as part of the <a href="https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation">HL7 IG Publisher</a>.</p>
-<p><strong>→ <a href="/docs/sushi/">SUSHI documentation</a></strong></p>
-<h3 id="what-is-gofsh">What is GoFSH?</h3>
-<p>GoFSH is a converter that takes FHIR artifacts (e.g., profiles, extensions, value sets, instances) and produces equivalent FSH. GoFSH is essentially the opposite of SUSHI. GoFSH helps you transition to FSH if you have an existing Implementation Guide produced by other methods.</p>
-<p><strong>→ <a href="/docs/gofsh/">GoFSH documentation</a></strong></p>
-<br>
-<hr>
-<h2 id="fsh-school-conventions">FSH School Conventions</h2>
-<p>The following style conventions are used throughout the FSH School content:</p>
-<table>
-<thead>
-<tr>
-<th align="left">Style</th>
-<th align="left">Explanation</th>
-<th align="left">Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left"><code>Code</code></td>
-<td align="left">Code fragments, such as commands, FSH statements, and syntax expressions</td>
-<td align="left"><code>* status = #open</code></td>
-</tr>
-<tr>
-<td align="left"><code>{curly braces}</code></td>
-<td align="left">An item to be substituted in a syntax expression</td>
-<td align="left"><code>{display string}</code></td>
-</tr>
-<tr>
-<td align="left"><code>&lt;datatype&gt;</code></td>
-<td align="left">An element or path to an element with the given data type, to be substituted in the syntax expression</td>
-<td align="left"><code>&lt;CodeableConcept&gt;</code></td>
-</tr>
-<tr>
-<td align="left"><em>italics</em></td>
-<td align="left">An optional item in a syntax expression</td>
-<td align="left"><code><i>&rdquo;{string}&ldquo;</i></code></td>
-</tr>
-<tr>
-<td align="left">ellipsis (&hellip;)</td>
-<td align="left">Indicates a pattern that can be repeated</td>
-<td align="left"><code>{flag1} {flag2} {flag3} &hellip;</code></td>
-</tr>
-<tr>
-<td align="left"><strong>bold</strong></td>
-<td align="left">A directory path or file name</td>
-<td align="left"><strong>example-1.fsh</strong></td>
-</tr>
-</tbody>
-</table>
-<p>In addition, the following symbols are used in documented commands:</p>
-<table>
-<thead>
-<tr>
-<th align="center">Symbol</th>
-<th align="left">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><i class='fab fa-apple fa-fw'></i></td>
-<td align="left">Indicates information or command specific to OS X. Commands can be run within the Terminal application.</td>
-</tr>
-<tr>
-<td align="center"><i class='fab fa-windows fa-fw'></i></td>
-<td align="left">Indicates information or command specific to Windows. A command window can be launched by typing <code>cmd</code> at the <em>Search Windows</em> tool.</td>
-</tr>
-<tr>
-<td align="center"><i class="fas fa-dollar-sign"></i></td>
-<td align="left">Represents command prompt (may vary depending on platform)</td>
-</tr>
-</tbody>
-</table>
-<br>
-<hr>
-<h2 id="getting-started-with-fhir-and-fsh">Getting started with FHIR and FSH</h2>
-<h3 id="fhir-and-fhir-profiling">FHIR and FHIR Profiling</h3>
-<p>Most FSH School resources assume a basic understanding of FHIR and FHIR profiling. A good way to get started is to go through our <a href="/courses/"><strong>self-service FSH Seminar course</strong>: Getting Started with New Tools to Create Swimmingly Slick Implementation Guides</a>. This covers how to read FHIR IGs and how to use FSH for <a href="https://hl7.org/fhir/profiling.html">FHIR Profiling</a>.</p>
-<p>Readers who are new to FHIR should also view the <a href="https://hl7.org/fhir/">FHIR Specification</a> (also linked in the right-hand sidebar). You may find the following more specific links helpful as well:</p>
+	<h2 id="step-1-install-nodejs">Step 1: Install Node.js</h2>
+<p>SUSHI requires Node.js. To install Node.js, go to <a href="https://nodejs.org/">https://nodejs.org/</a> and select the &ldquo;LTS&rdquo; download. If the download is not appropriate for your operating system, click the &ldquo;Other Downloads&rdquo; link to get a full list of downloads. Once the installer is downloaded, run it using the default options.</p>
+<p>Ensure that Node.js is correctly installed by opening a command window and typing the following two commands. Each command should return a version number.</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><i class="fas fa-dollar-sign"></i> node --version
+<i class="fas fa-dollar-sign"></i> npm --version
+</code></pre></div><h2 id="step-2-install-sushi">Step 2: Install SUSHI</h2>
+<p>To install SUSHI, open up a command prompt and type the following command:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><i class="fas fa-dollar-sign"></i> npm install -g fsh-sushi
+</code></pre></div><p>Check the installation via the command below:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><i class="fas fa-dollar-sign"></i> sushi <span style="color:#204a87">help</span>
+</code></pre></div><p>If the command outputs instructions on using the SUSHI command line interface (CLI), you&rsquo;re ready to run SUSHI.</p>
+<p>Use <code>sushi -v</code> to display the installed version of SUSHI and the version of the FSH specification it supports. SUSHI follows the <a href="https://semver.org">semantic versioning</a> convention (MAJOR.MINOR.PATCH):</p>
 <ul>
-<li><a href="http://hl7.org/fhir/profiling.html">Profiling</a>: Provides information and guidance on profiling topics such as constraining and slicing.</li>
-<li><a href="http://hl7.org/fhir/extensibility.html">Extensibility</a>: Provides information about using and defining extensions.</li>
-<li><a href="http://hl7.org/fhir/resourcelist.html">Resources</a>: Lists all FHIR resources. Useful for referencing available elements as you write profiles.</li>
-<li><a href="http://hl7.org/fhir/datatypes.html">DataTypes</a>: Lists all FHIR datatypes. Useful for understanding types declared in resource elements.</li>
-<li><a href="http://hl7.org/fhir/structuredefinition.html">StructureDefinition</a>: Documents StructureDefinition (basis for resources, profiles, and extensions). Useful for authoring top-level caret rules.</li>
-<li><a href="http://hl7.org/fhir/elementdefinition.html#ElementDefinition">ElementDefinition</a>: Documents ElementDefinition (basis for elements in resources, profile, and extensions). Useful for authoring path-specific caret rules.</li>
+<li><strong>MAJOR</strong>: A major release has significant new functionality and, potentially, grammar changes or other non-backward-compatible changes.</li>
+<li><strong>MINOR</strong>: Contains new or modified features, while maintaining backwards compatibility within the major version.</li>
+<li><strong>PATCH</strong>: Contains minor updates and bug fixes, while maintaining backwards compatibility within the major version.</li>
 </ul>
-<p>Additionally, these other resources may be of interest:</p>
-<ul>
-<li><a href="https://build.fhir.org/ig/FHIR/ig-guidance/">Guidance for FHIR IG Creation</a>: (Work in Progress) Documents the new template-based publishing framework.</li>
-<li><a href="https://confluence.hl7.org/display/FHIR/IG+Publisher+Documentation">IG Publisher</a>: Documents how to use and configure the HL7 IG Publisher.</li>
-</ul>
-<h3 id="fsh">FSH</h3>
-<p>We recommend new FSH authors start with the <a href="https://hl7.org/fhir/uv/shorthand/">overview</a> and review the <a href="https://hl7.org/fhir/uv/shorthand/reference.html">language reference</a> that are part of official FSH Specification when additional details are needed.</p>
-<p>Additionally, <em>all</em> FSH authors are strongly recommended to go on the <a href="https://fshschool.org/courses/fsh-seminar/04-deep-dive-with-fsh.html">Deep Dive with FSH</a> (part of our <a href="/courses/">self-service FSH Seminar course</a>).</p>
+
+
+<div class="alert alert-success" role="alert">
+<h4 class="alert-heading">Tip</h4>
+For the most up-to-date information and latest releases of SUSHI, check the <a href="https://github.com/FHIR/sushi/releases">release history and release notes</a>.
+</div>
+
+<h2 id="reverting-sushi">Reverting SUSHI</h2>
+<p>To revert to a previous version of SUSHI, run:</p>
+<div class="highlight"><pre style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><i class="fas fa-dollar-sign"></i> npm install -g fsh-sushi@<span style="color:#ce5c00;font-weight:bold">{</span>version<span style="color:#ce5c00;font-weight:bold">}</span>
+</code></pre></div><p>where the <code>{version}</code> is replaced by the desired MAJOR.MINOR.PATCH version (e.g., <code>npm install -g fsh-sushi@2.2.6</code>).</p>
 
         <div class="section-index">
     
@@ -710,22 +650,6 @@
             
         
             
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/sushi/">SUSHI</a>
-                    </h5>
-                    <p>This section contains the documentation for SUSHI, a tool that converts FSH language to FHIR artifacts</p>
-                </div>
-            
-        
-            
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/gofsh/">GoFSH</a>
-                    </h5>
-                    <p>This section contains the documentation for GoFSH, which turns FHIR artifacts into FSH definitions</p>
-                </div>
-            
         
             
         
@@ -738,12 +662,7 @@
             
         
             
-                <div class="entry">
-                    <h5>
-                        <a href="/docs/vscode/">Visual Studio Code Extension</a>
-                    </h5>
-                    <p>If you use Visual Studio Code (VS Code) as your editor, you can install this extension to provide FSH syntax highlighting and other producitvity enhancements</p>
-                </div>
+        
             
         
             
@@ -759,7 +678,7 @@
 
 	
 	
-	<div class="text-muted mt-5 pt-3 border-top">Last modified August 15, 2022: <a  href="https://github.com/FSHSchool/site/commit/787f1cb48d1a22e3d9769d6f80211b659fc4ab5b">Reorganize documentation and add links to FSH Seminar (#65) (787f1cb)</a>
+	<div class="text-muted mt-5 pt-3 border-top">Last modified May 2, 2024: <a  href="https://github.com/FSHSchool/site/commit/9513c199578d987428bf3007d79ec371c0951287">Remove specific tags for SUSHI 3.0.0 &#43; Document new CLI command options (#90) (9513c19)</a>
 </div>
 </div>
 
