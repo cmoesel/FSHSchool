@@ -1,11 +1,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>FSH School – Installation</title>
-    <link>/docs/gofsh/installation/</link>
+    <link>https://cmoesel.github.io/FSHSchool/docs/gofsh/installation/</link>
     <description>Recent content in Installation on FSH School</description>
     <generator>Hugo -- gohugo.io</generator>
     
-	  <atom:link href="/docs/gofsh/installation/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="https://cmoesel.github.io/FSHSchool/docs/gofsh/installation/index.xml" rel="self" type="application/rss+xml" />
     
     
       
